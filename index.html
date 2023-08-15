@@ -9,19 +9,26 @@
 </head>
 <body>
     <div class="score-holder">
-        <div class="score1">0</div>
+        <div class="score1" id="score-left">0</div>
         <div>-</div>
-        <div class="score2">0</div>
+        <div class="score2" id="score-right">0</div>
     </div>
-    <div class="game-cotainer">
-        <div class="borders"></div>
-        <div class="canva" id="canva1">
-            <div class="paddle right" style="top: 400px;" id="right-paddle"></div>
-            <div class="ball"></div>
-            <div class="paddle left" style="top: 400px;" id="left-paddle"></div>
+    <div class="game-container">
+        <div class="inner">
+            <div class="vertical borders"></div>
+            <div class="horizontal">
+                <div class="borders"></div>
+                <div class="canva" id="canva1">
+                    <div class="paddle left" style="top: 400px;" id="left-paddle"></div>
+                    <div class="ball" id="ball1"></div>
+                    <div class="paddle right" style="top: 400px;" id="right-paddle"></div>
+                </div>
+                <div class="borders"></div>
+            </div>
+            <div class="vertical borders"></div>
         </div>
-        <div class="borders"></div>
     </div>
+    <div class="filler"></div>
 </body>
 <script src="./script.js"></script>
 
