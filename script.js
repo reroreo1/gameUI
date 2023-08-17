@@ -98,7 +98,7 @@ function checkPaddleBallCollision() {
 
 let ballSpeedFactor = 1; 
 function endGame(score1, score2){
-    if (score1+ score2 === 2){
+    if (score1+ score2 === 15){
         const modal = document.getElementById("myModal");
         modal.style.display = "block";
         gameEnded = true;
